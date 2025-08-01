@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RTN Device Tracker</title>
+  <link rel="stylesheet" href="file:///C:/Users/Windows/Documents/coollinks%20work%20pt2/coollinks%20loginpagept4.css">
+  </head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="nav-left">RTN Device Tracker</div>
+    <div class="nav-center">
+      <a href="#">Add Employee</a>
+      <a href="#">Add Device</a>
+      <a href="#">Devices</a>
+    </div>
+        <div class="header-right">
+      <span class="icon">🌙</span>
+
+      <button class="logout" id="openModalBtn">LOG OUT</button>
+      
+       <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal" id="logoutModal">
+      <div class="close-icon" id="closeModal">&times;</div>
+      <h2>Log Out?</h2>
+      <p>It’s sad to let you leave us, we hope you would be back soon!</p>
+      <div class="modal-buttons">
+        <button class="cancel-btn" id="cancelBtn">Cancel</button>
+        <button class="logout-btn"><a class="link" href="file:///C:/Users/Windows/Documents/coollinks%20work%20pt2/coollinks%20loginbook.html?">Log out</a></button>
+      </div>
+    </div>
+  </div>
+    </div>
+  </nav>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">Error Occurred!</div>
+
+  <!-- FORM -->
+  <div class="container">
+    <form id="deviceForm">
+      <h2>Add Device</h2>
+      <label>First Name</label>
+      <input type="text">
+
+      <label>Last Name</label>
+      <input type="text">
+
+      <label>Device Type</label>
+      <select>
+        <option>No Device</option>
+        <option>Tablet</option>
+        <option>Laptop</option>
+        <option>Phone</option>
+      </select>
+
+      <label>Serial Number</label>
+      <input type="text">
+
+      <label>Received From</label>
+      <input type="text">
+
+      <label>Status</label>
+      <select>
+        <option>Available</option>
+        <option>In Use</option>
+        <option>Faulty</option>
+      </select>
+
+      <button type="submit">
+        SUBMIT
+        <div class="spinner" id="spinner"></div>
+      </button>
+    </form>
+
+    <script src="file:///C:/Users/Windows/Documents/coollinks%20work%20pt2/coollink%20loginpagept4.js"></script>
+  </div>

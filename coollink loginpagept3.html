@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Employee</title>
+  <link rel="stylesheet" href="file:///C:/Users/Windows/Documents/coollinks%20work%20pt2/coollink%20loginpagept3.css">
+</head>
+<body>
+  <header>
+    <h1><b>RTN Device Tracker</b></h1>
+    <nav>
+      <a href="#">Add Employee</a>
+      <a href="#">Add Device</a>
+      <a href="#">Devices</a>
+    </nav>
+    <div class="header-right">
+      <span class="icon">🌙</span>
+      <button class="logout" id="openModalBtn">LOG OUT</button>
+
+       <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal" id="logoutModal">
+      <div class="close-icon" id="closeModal">&times;</div>
+      <h2>Log Out?</h2>
+      <p>It’s sad to let you leave us, we hope you would be back soon!</p>
+      <div class="modal-buttons">
+        <button class="cancel-btn" id="cancelBtn">Cancel</button>
+        <button class="logout-btn"><a class="link" href="file:///C:/Users/Windows/Documents/coollinks%20work%20pt2/coollinks%20loginbook.html?">Log out</a></button>
+      </div>
+    </div>
+  </div>
+    </div>
+    </div>
+  </header>
+
+  <main>
+    <h2>Add Employee</h2>
+    <form class="form-container">
+      <label>First Name</label>
+      <input type="text" placeholder="">
+
+      <label>Last Name</label>
+      <input type="text" placeholder="">
+
+      <label>Email Address</label>
+      <input type="email" placeholder="">
+
+      <label>Position</label>
+      <input type="text" placeholder="">
+
+      <label>Location</label>
+      <select>
+        <option>Lagos</option>
+        <option>Abuja</option>
+        <option>Port Harcourt</option>
+      </select>
+
+      <label>Start Date</label>
+      <input type="date">
+
+      <label>Assign Device (Optional)</label>
+      <select>
+        <option>No Device</option>
+        <option>Redmi A3 Pro</option>
+        <option>Dell Latitude 770</option>
+      </select>
+
+      <label class="checkbox-container">
+        Is active
+        <input type="checkbox" checked>
+        <span class="checkmark"></span>
+      </label>
+
+      <button type="submit" class="save-btn" id="saveBtn">SAVE
+        <div id="loader" class="loader"></div>
+        <div id="toast" class="toast">Saved!</div>
+      </button>
+
+    </form>
+
+    <script src="file:///C:/Users/Windows/Documents/coollinks%20work%20pt2/coollink%20loginpagept3.js"></script>
+  </main>
+</body>
+</html>

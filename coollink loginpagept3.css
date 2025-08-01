@@ -1,0 +1,239 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9fb;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 20px 40px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2d2d2d;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.link{
+  color: white;
+}
+
+    /* Modal Backdrop */
+    .modal-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 100px;
+      z-index: 1000;
+    }
+
+    /* Modal */
+    .modal {
+      background: white;
+      border-radius: 12px;
+      width: 400px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      transform: translateY(-200px);
+      opacity: 0;
+      transition: all 0.4s ease;
+      text-align: center;
+    }
+
+    .modal.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .modal h2 {
+      margin-bottom: 10px;
+    }
+
+    .modal p {
+      color: #444;
+      margin-bottom: 25px;
+    }
+
+    .modal-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .modal button {
+      padding: 10px 20px;
+      border: none;
+      font-size: 14px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .cancel-btn {
+      background: #f0f0ff;
+      color: #4f46e5;
+    }
+
+    .logout-btn {
+      background: #4f46e5;
+      color: white;
+    }
+
+    .close-icon {
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      cursor: pointer;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .icon {
+      font-size: 30px;
+    position: absolute;
+    top: 30px;
+    right: 140px;
+    }
+
+.logout {
+  background: #ffe0f0;
+  color: #e6005c;
+  padding: 8px 16px;
+  border: 1px solid #e6005c;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+ #saveBtn {
+      position: relative;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* Style the loader (spinner) */
+    .loader {
+      border: 3px solid #f3f3f3;
+      border-top: 3px solid #3498db;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      animation: spin 1s linear infinite;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: none;
+    }
+
+    /* Animation for spinning effect */
+    @keyframes spin {
+      0% { transform: translateY(-50%) rotate(0deg); }
+      100% { transform: translateY(-50%) rotate(360deg); }
+    }
+
+    /* Toast notification styles */
+    .toast {
+      position: fixed;
+      right: -300px;
+      top: 20px;
+      background-color: #1abc9c;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: right 0.5s ease, opacity 0.5s ease;
+      z-index: 9999;
+      opacity: 0;
+    }
+
+    .toast.show {
+      right: 20px;
+      opacity: 1;
+    }
+
+main {
+  padding: 40px;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main h2 {
+  font-size: 22px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+.form-container label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="date"],
+.form-container select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f2f6f9;
+  font-size: 14px;
+}
+
+.save-btn {
+  background-color: #4b6ef5;
+  color: white;
+  padding: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #00c48c;
+  cursor: pointer;
+}
